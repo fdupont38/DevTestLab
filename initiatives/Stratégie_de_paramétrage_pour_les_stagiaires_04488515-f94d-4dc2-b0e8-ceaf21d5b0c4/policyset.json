@@ -1,0 +1,83 @@
+{
+ "properties": {
+  "displayName": "Stratégie de paramétrage pour les stagiaires",
+  "policyType": "Custom",
+  "description": "Emplacements autorisés WestEurope, NorthEurope\nTag obligatoir : Formation : Demo",
+  "metadata": {
+   "category": "Perso",
+   "parameterScopes": {
+    "listOfAllowedLocations": "/providers/Microsoft.Management/managementGroups/Formation",
+    "listOfAllowedSKUs": "/providers/Microsoft.Management/managementGroups/Formation"
+   },
+   "createdBy": "20dde6c0-71e3-411a-a34e-b7b9e6958a17",
+   "createdOn": "2020-06-09T06:37:30.3525035Z",
+   "updatedBy": "20dde6c0-71e3-411a-a34e-b7b9e6958a17",
+   "updatedOn": "2020-06-12T13:53:00.8686127Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "14079228782638368545",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "westeurope",
+       "northeurope"
+      ]
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12329749649825242909",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "westeurope",
+       "northeurope"
+      ]
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "17626670760007868789",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Formation"
+     },
+     "tagValue": {
+      "value": "Demo-Stagiaire"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14480750757074564690",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/49c88fc8-6fd1-46fd-a676-f12d1d3a4c71",
+    "parameters": {
+     "tagName": {
+      "value": "Formation"
+     },
+     "tagValue": {
+      "value": "Demo-Stagiaire"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "1491091754063395755",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cccc23c7-8427-4f53-ad12-b6a63eb452b3",
+    "parameters": {
+     "listOfAllowedSKUs": {
+      "value": [
+       "standard_b2s"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/Formation/providers/Microsoft.Authorization/policySetDefinitions/04488515-f94d-4dc2-b0e8-ceaf21d5b0c4",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "04488515-f94d-4dc2-b0e8-ceaf21d5b0c4"
+}
